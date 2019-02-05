@@ -4,5 +4,5 @@
 ## - run in the Comand Line
 ### : npm install
 ### : npm run compile:sass
-##  Ctr+S to make the changes and to bundle the sass into Css file, to apply the css to the page.
+##  Ctr+S to apply the changes and to bundle the sass into Css file.
 
