@@ -1,0 +1,50 @@
+.side-bar {
+    background-color: rgba($color-gold, .8);
+    grid-column: [side-start] / [side-end];
+    grid-row : 1 / -1;
+    display: grid;
+    justify-content: center;
+    @media only screen and (max-width:47rem) {
+       grid-column: 1 / -1;
+       grid-row: 1 / 2;
+       align-items: center;
+       justify-content: end;
+    }    
+}
+.nav-btn {
+    border: none;
+    border-radius: 0;
+    background-color: $color-white;
+    height:2px;
+    width: 4.5rem;
+    margin-top: 4rem;
+    @media only screen and (max-width:47rem) {
+        width: 3.5rem;
+        margin-top:0; 
+     }
+&::before,
+&::after {
+    background-color: $color-white;
+    height:2px;
+    width: 4.5rem;
+    content: "";
+    display: block;
+    @media only screen and (max-width:47rem) {
+        width: 3.5rem;   
+    }
+}
+&::before {
+    transform: translateY(-1.5rem);
+}
+&::after {
+    transform: translateY(1.3rem);
+}
+@media only screen and (max-width:47rem) {          
+    &::before {
+        transform: translateY(-1rem);
+    }
+    &::after {
+        transform: translateY(.7rem);
+    }
+}
+}

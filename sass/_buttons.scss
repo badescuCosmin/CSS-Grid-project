@@ -1,0 +1,33 @@
+.btn {
+    color:$color-white;
+    text-decoration: none;
+    padding: .8rem 2rem;
+    font-size: 2rem;
+    background-color: rgba($color-white, .1);
+    display: block;
+    transition: all .3s;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0, .4);
+    cursor: pointer;
+    span {
+        opacity: 0;
+        transition: margin-left .2s, opacity .3s;  
+    }
+    &:hover {
+        background-color: rgba($color-grey, .5);  
+    }
+    &:active {
+       transform: translateY(.5rem);
+       box-shadow: 0 .5rem 1rem rgba(0,0,0, .4);
+    }
+    &:hover span {
+        margin-left: 1rem;
+        opacity: 1;
+    }
+    &__watch {   
+        padding: .6rem 1.5rem;
+        font-size: 1.5rem;
+        color:$color-black;
+        box-shadow: 0 .1rem .4rem rgba(0,0,0, .3);
+    }
+}

@@ -1,0 +1,25 @@
+.header {
+    grid-column: full-start / col-end 5;
+    background-image: linear-gradient(to right,rgba($color-black, .3), rgba($color-black, .7)),url(../img/lux1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 20vh);
+    padding: 0;
+    @media only screen and (max-width:47rem) {        
+        grid-column: full-start / full-end;
+    }   
+    h1 {
+        grid-column: 1 / -1;
+    }
+    h2 {
+        grid-column: 2 / 3;
+    }
+    .btn {
+        grid-column: 1 / -1;
+    }
+}

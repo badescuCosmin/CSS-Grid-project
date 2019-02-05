@@ -1,0 +1,25 @@
+.details {
+    grid-column: col-start 6 / full-end;
+    display: grid;
+    grid-template-rows: 50vh 25vh 25vh;
+    padding: 0;
+    @media only screen and (max-width:47rem) {   
+        grid-column: full-start / full-end;
+        grid-template-rows: 0vh 50vh 50vh;
+    }
+    &__img-1 {
+        grid-row: 1 / 2;
+    }
+    &__img-2 {
+        grid-row: 2 / 3;        
+    }
+    &__img-3 {
+        grid-row: 3 / 4;        
+    }
+    &__photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}

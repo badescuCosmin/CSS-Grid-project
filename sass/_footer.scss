@@ -1,0 +1,8 @@
+.footer {
+    background-color: $color-black;
+    grid-column: full-start / full-end;
+    color:$color-white;
+    font-size: 1.7rem;
+    display: grid;
+    justify-content: center;
+}
